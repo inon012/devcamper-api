@@ -13,6 +13,9 @@ const bootcamps = require('./routes/bootcamps');
 
 const app = express();
 
+// Body parser
+app.use(express.json());
+
 // Mount routers
 app.use('/api/v1/bootcamps', bootcamps);
 
